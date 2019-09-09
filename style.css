@@ -1,18 +1,8 @@
-html {
-    box-sizing: border-box;
-}
-
 body {
     background-color: darkslategray;
 }
 
-#container {
-    margin: 0 auto;
-    max-width: 1000px;
-}
-
 header {
-    width: 100%;
     height: 100px;
     background-color: darkgrey;
 }
@@ -28,6 +18,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 nav ul {
@@ -58,28 +50,32 @@ nav ul a:active {
     color: black;
 }
 
-main {
-    min-height: 600px;
-    background-color: rgb(27, 49, 58);
+.current_nav {
+    background-color: blue;
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     min-height: 100px;
     background-color: rgb(41, 88, 88);
     color: white;
 }
 
+.footer_container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 footer .footer_copyright {
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 footer .footer_contact a {
     display: flex;
     flex-direction: column;
-    margin: 10px 50px 10px 0px;
+    margin: 10px 40px 10px 0px;
 }
 
 footer .footer_contact a:link {
@@ -97,4 +93,25 @@ footer .footer_contact a:hover {
 
 footer .footer_contact a:active {
     color: black;
+}
+
+main {
+    display: flex;
+    min-height: 600px;
+    background-color: rgb(27, 49, 58);
+}
+
+.main_container {
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.main_container p {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.main_container h2 {
+    margin-left: 40px;
+    margin-right: 40px;
 }
