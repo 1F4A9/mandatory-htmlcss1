@@ -1,10 +1,17 @@
 body {
     background-color: #081B2D;
+    font-family: 'Noto Serif', serif;
 }
 
 header {
-    height: 100px;
-    background-color: #1C2F42;
+    height: 300px;
+}
+
+.header_img {
+    background-image: url("./img/Rityta_1.png");
+    background-repeat: repeat;
+    height: 300px;
+    width: 100%;
 }
 
 nav h1 {
@@ -50,7 +57,7 @@ nav ul a:hover {
 }
 
 footer {
-    min-height: 100px;
+    min-height: 300px;
     background-color: #1C2F42;
     color: #4390DB;
 }
@@ -61,6 +68,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-height: 300px
 }
 
 footer .footer_copyright {
@@ -116,18 +124,35 @@ img {
 }
 
 .table_movies {
-    margin-top: 20px;
+    margin-top: 130px;
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .025), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.table_movies th,
+.table_movies td {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid black;
 }
 
 .table_movies thead th {
-    background-color: rgba(0, 255, 0, 0.322);
-    padding: 20px 20px;
-    margin-top: 20px;
+    background-color: #081B2D;
+    color: #4390DB;
 }
 
 .table_movies tbody td {
-    background-color: rgb(112, 103, 70);
-    padding: 20px 20px;
+    background-color: #1C2F42;
+    color: #ffffff;
+}
+
+.ul_links {
+    margin-top: 80px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .025), 0 15px 40px rgba(166, 173, 201, .2);
+    background-color: #E4F0FB;
+    border: 1px solid #BBD6ED;
+    border-radius: 4px;
 }
 
 .ul_links :first-child {
@@ -136,7 +161,6 @@ img {
 
 .ul_links ul li {
     margin: 15px 0px;
-    list-style: none;
 }
 
 .ul_links a:link {
@@ -151,24 +175,48 @@ img {
 .ul_links a:hover {
     text-decoration-line: underline;
     color: #4390DB;
-
 }
 
 .form_contact {
-    margin-top: 20px;
+    margin-top: 100px;
+    padding: 20px 50px;
+    ;
+    background-color: #E4F0FB;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .025), 0 15px 40px rgba(166, 173, 201, .2);
+    border-radius: 4px;
+    border: 1px solid #BBD6ED;
 }
 
-.form_contact input {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
-
-.form_contact select {
-    margin: 0px 10px 10px 10px;
-}
-
+.form_contact input,
+.form_contact select,
 .form_contact textarea {
     display: flex;
-    margin: 0px 10px 10px 10px;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.form_contact input[type=submit] {
+    width: 90%;
+    display: block;
+    padding: 14px 0px;
+    background-color: #7BBEFF;
+}
+
+.form_contact input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #4390DB;
+}
+
+.form_contact input:not(:last-child):focus,
+.form_contact select,
+.form_contact textarea {
+    border: 2px solid #7BBEFF;
+}
+
+.form_contact h3 {
+    text-align: center;
+    position: relative;
+    top: -10px;
 }

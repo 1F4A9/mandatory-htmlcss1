@@ -3,44 +3,46 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Kontakta</title>
+    <title>Kontakt</title>
 </head>
 
 <body>
     <div id="container">
         <header>
-            <nav>
-                <h1>Kontakt</h1>
-                <ul>
-                    <li><a href="index.html">index</a></li>
-                    <li><a href="about.html">om mig</a></li>
-                    <li><a href="movies.html">filmer</a></li>
-                    <li><a href="links.html">länkar</a></li>
-                    <li><a class="current_nav" href="contact.html"><u>kontakt</u></a></li>
-                </ul>
-            </nav>
+            <div class="header_img">
+                <nav>
+                    <h1>Kontakt</h1>
+                    <ul>
+                        <li><a href="index.html">index</a></li>
+                        <li><a href="about.html">om mig</a></li>
+                        <li><a href="movies.html">filmer</a></li>
+                        <li><a href="links.html">länkar</a></li>
+                        <li><a class="current_nav" href="contact.html"><u>kontakt</u></a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <main>
             <div class="main_container">
                 <div class="form_contact">
+                    <h3>Fyll i formuläret</h3>
                     <form>
-                        <fieldset>
-                            <legend>SIGN IN</legend>
-                            <input type="text" name="first-name" placeholder="first name" required>
-                            <input type="text" name="last-name" placeholder="last name" required>
-                            <input type="email" name="email" placeholder="email" required>
-                            <select name="ratings" required>
-                                <option value="---" autofocus>--- Betygsätt hemsidan ---</option>
-                                <option value="1/5">Inte bra</option>
-                                <option value="2/5">Kunde varit bättre</option>
-                                <option value="3/5">Helt okej</option>
-                                <option value="4/5">Bra</option>
-                                <option value="5/5">Mycket bra</option>
-                            </select>
-                            <textarea rows="4" cols="22" required>Lämna ett meddelande här.</textarea>
-                        </fieldset>
+                        <input type="text" name="first-name" placeholder="first name" required>
+                        <input type="text" name="last-name" placeholder="last name" required>
+                        <input type="email" name="email" placeholder="email" required>
+                        <select name="ratings" required>
+                            <option value="---" autofocus>--- Betygsätt hemsidan ---</option>
+                            <option value="1/5">Inte bra</option>
+                            <option value="2/5">Kunde varit bättre</option>
+                            <option value="3/5">Helt okej</option>
+                            <option value="4/5">Bra</option>
+                            <option value="5/5">Mycket bra</option>
+                        </select>
+                        <textarea rows="4" cols="22" required>Lämna ett meddelande här.</textarea>
+                        <input type="submit" value="submit">
                     </form>
                 </div>
             </div>
