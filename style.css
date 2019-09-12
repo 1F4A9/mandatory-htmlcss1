@@ -15,7 +15,6 @@ header {
 }
 
 nav h1 {
-    display: flex;
     color: #4390DB;
     margin-left: 40px;
     font-size: 35px;
@@ -50,10 +49,6 @@ nav ul a:visited {
 
 nav ul a:hover {
     color: #7BBEFF;
-}
-
-.current_nav {
-    color: #ffffff;
 }
 
 footer {
@@ -155,10 +150,6 @@ img {
     border-radius: 4px;
 }
 
-.ul_links :first-child {
-    color: black;
-}
-
 .ul_links ul li {
     margin: 15px 0px;
 }
@@ -180,7 +171,6 @@ img {
 .form_contact {
     margin-top: 100px;
     padding: 20px 50px;
-    ;
     background-color: #E4F0FB;
     box-shadow: 0 5px 10px rgba(154, 160, 185, .025), 0 15px 40px rgba(166, 173, 201, .2);
     border-radius: 4px;
